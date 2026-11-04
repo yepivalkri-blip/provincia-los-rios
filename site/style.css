@@ -1,0 +1,14 @@
+:root{--bg:#f5f8f7;--ink:#12262b;--river:#0e5a66;--banana:#f2b705;--card:#fff;--line:#d3dfdc}
+@media(prefers-color-scheme:dark){:root{--bg:#0d1a1d;--ink:#e8f0ee;--river:#6cc3cf;--card:#15292d;--line:#27424a}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 system-ui,sans-serif}
+header{display:flex;justify-content:space-between;align-items:center;padding:.8rem 1.2rem;border-bottom:4px solid var(--banana);position:relative}
+.logo{font:700 1.4rem Georgia,serif;color:var(--river);text-decoration:none}
+summary{cursor:pointer;font-weight:600;color:var(--river)}details nav{position:absolute;right:1rem;top:100%;z-index:5;background:var(--card);border:1px solid var(--line);padding:.5rem;display:grid;grid-template-columns:repeat(2,1fr);gap:.2rem;max-width:92vw}
+nav a{padding:.3rem .7rem;text-decoration:none;color:var(--ink);border-radius:4px}nav a:hover,nav a.on{background:var(--river);color:#fff}
+main{max-width:860px;margin:auto;padding:1.5rem 1.2rem 3rem}h1{font:700 2.4rem Georgia,serif;color:var(--river);margin:.2em 0}h2{font:700 1.3rem Georgia,serif;margin-top:2rem;border-bottom:1px solid var(--line)}
+.lead{font-size:1.1rem;max-width:65ch}.hero{display:flex;gap:1.2rem;align-items:flex-start;flex-wrap:wrap}.hero img{width:200px;border:1px solid var(--line)}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.8rem;margin:1.2rem 0}.facts div{background:var(--card);border-left:4px solid var(--banana);padding:.7rem 1rem}.facts span{display:block;font-size:.85rem;color:var(--river);font-weight:600}
+.tags{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:.5rem}.tags li{background:var(--card);border:1px solid var(--line);padding:.2rem .7rem;border-radius:99px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:.8rem}.grid a{background:var(--card);border:1px solid var(--line);padding:.8rem;text-decoration:none;color:var(--ink)}.grid a:hover{border-color:var(--river)}.grid b{display:block;color:var(--river)}.grid span{font-size:.9rem}
+iframe{width:100%;height:340px;border:1px solid var(--line)}a{color:var(--river)}a:focus-visible,summary:focus-visible{outline:3px solid var(--banana)}
+footer{text-align:center;font-size:.85rem;padding:1.5rem;border-top:1px solid var(--line)}
